@@ -98,7 +98,8 @@ body {
     align-self: stretch;
     margin-bottom: -25px;
     left: 50px;
-    font: 700 40px Inter, sans-serif;
+    letter-spacing: 2px;
+    font: 700 40px DM, serif;
   }
 
   .component .text-container .column-2 .div-4 {
@@ -108,7 +109,8 @@ body {
     margin-top: 35px;
     width: 82%;
     left: 50px;
-    font: 400 18px Inter, sans-serif;
+    font: 400 18px DM, sans-serif;
+    line-height: 21px;
   }
 
   .component .text-container .column-2 .div-5 {
@@ -126,7 +128,7 @@ body {
   
   h1 {
     color: white;
-    font-family: DM , sans-serif;
+    font-family: DM , serif;
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
