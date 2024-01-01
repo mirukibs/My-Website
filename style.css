@@ -346,4 +346,30 @@ body {
     .socialButtonsMobile {
       display: flex;
     }
+
+    .component {
+      display: flex;
+    }
+
+    .component .about-nav {
+      display: none;
+    }
+    .component .text-container {
+      display: none;
+    }
+
+    .component .text-container-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .component .text-container-mobile .column .img {
+      position: relative;
+      top: -150px;
+      aspect-ratio: 1.6;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      overflow: hidden;
+    }
   }
