@@ -373,6 +373,7 @@ body {
 
     .component .text-container-mobile .column .img {
       position: relative;
+      margin-top: 200px;
       top: -150px;
       aspect-ratio: 1.6;
       object-fit: contain;
@@ -386,6 +387,7 @@ body {
       text-align: left;
       flex-direction: column;
       line-height: normal;
+      margin-left: -35px;
       width: 50%;
       align-content: center;
     }
@@ -404,11 +406,52 @@ body {
       position: relative;
       color: #fff;
       align-self: stretch;
+      margin-top: -25px;
       margin-bottom: -25px;
       margin-right: -150px;
       left: 50px;
       letter-spacing: 2px;
       font: 700 34px DM, serif;
+    }
+
+    .component .text-container-mobile .column-2 .div-4 {
+      position: relative;
+      color: #fff;
+      align-self: stretch;
+      margin-top: 50px;
+      margin-right: -130px;
+      left: 50px;
+      font: 400 18px DM, sans-serif;
+      line-height: 21px;
+    }
+
+    .component .text-container-mobile .column-2 .div-5 {
+      position: relative;
+      align-content: center;
+      left: 65%;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+      justify-content: center;
+      border-radius: 40px;
+      border: 1px solid #fff;
+      margin-top: 30px;
+      padding: 8px;
+      font: 500 14px/120% DM Sans, sans-serif;
+    }
+
+    .component .text-container .column-2 .div-5 {
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+      justify-content: center;
+      border-radius: 40px;
+      border: 1px solid #fff;
+      margin-top: 30px;
+      padding: 8px;
+      font: 500 14px/120% DM Sans, sans-serif;
     }
 
   }
