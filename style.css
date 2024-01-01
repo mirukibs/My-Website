@@ -41,7 +41,7 @@ body {
     margin: auto;
     left: 40%;
     bottom: 95px;
-}
+  }
 
   .component .text-container {
     position: relative;
@@ -366,6 +366,25 @@ body {
       display: none;
     }
 
+  .left,
+  .right {
+    display: flex;
+    margin: auto;
+    gap: 12px;
+  }
+
+    .component .about-nav-mobile .socialButtonsMobile .left {
+      position: absolute;
+      left: -10px;
+      top: 20.5%;
+    }
+
+    .component .about-nav-mobile .socialButtonsMobile .right {
+      position: absolute;
+      right: -10px;
+      top: 20.5%;
+    }
+
     .component .text-container-mobile {
       flex-direction: column;
       align-items: center;
@@ -373,7 +392,7 @@ body {
 
     .component .text-container-mobile .column .img {
       position: relative;
-      margin-top: 200px;
+      margin-top: 90px;
       top: -150px;
       aspect-ratio: 1.6;
       object-fit: contain;
@@ -422,7 +441,7 @@ body {
       margin-right: -130px;
       left: 50px;
       font: 400 18px DM, sans-serif;
-      line-height: 21px;
+      line-height: 19px;
     }
 
     .component .text-container-mobile .column-2 .div-5 {
