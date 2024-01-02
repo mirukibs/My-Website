@@ -369,6 +369,7 @@ body {
   .left,
   .right {
     display: flex;
+    align-content: center;
     margin: auto;
     gap: 12px;
   }
