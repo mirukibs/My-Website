@@ -2,7 +2,7 @@ body {
     background-color: #262626;
     text-align: center;
   }
-  
+
   .container {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -12,10 +12,123 @@ body {
     flex-direction: column;
     width: 90%;
   }
+
+  .component {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 10%;
+  }
+
+  .navButton {
+      width: 65px;
+      height: 65px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      position: relative;
+      bottom: 20px;
+      box-shadow: 0px 0px 0px 2px transparent;
+      -webkit-box-shadow: 0px 0px 0px 2px transparent;
+      -moz-box-shadow: 0px 0px 0px 2px transparent;
+  }
+
+  .component .about-nav {
+    position: relative;
+    margin: auto;
+    left: 40%;
+    bottom: 95px;
+  }
+
+  .component .text-container {
+    position: relative;
+    /* gap: 0px; */
+    display: flex;
+    width: auto;
+    height: auto;
+    bottom: 70px;
+    align-content: center;
+  }
+
+  .component .text-container .column {
+    position: relative;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    /* margin-left: -10px; */
+    align-content: center;
+  }
+
+  .component .text-container .column .img {
+    aspect-ratio: 1.5;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .component .text-container .column-2 {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    line-height: normal;
+    width: 40%;
+    align-content: center;
+  }
+
+  .component .text-container .column-2 .div-2 {
+    position: relative;
+    top: 20px;
+    /* align-items: center; */
+    align-content: center;
+    display: flex;
+    padding-right: 19px;
+    flex-direction: column;
+    /* margin: auto 0; */
+  }
+
+  .component .text-container .column-2 .div-3 {
+    position: relative;
+    color: #fff;
+    align-self: stretch;
+    margin-bottom: -25px;
+    left: 50px;
+    letter-spacing: 2px;
+    font: 700 40px DM, serif;
+  }
+
+  .component .text-container .column-2 .div-4 {
+    position: relative;
+    color: #fff;
+    align-self: stretch;
+    margin-top: 35px;
+    width: 82%;
+    left: 50px;
+    font: 400 18px DM, sans-serif;
+    line-height: 21px;
+  }
+
+  .component .text-container .column-2 .div-5 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.7px;
+    white-space: nowrap;
+    justify-content: center;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    margin-top: 30px;
+    padding: 8px;
+    font: 500 14px/120% DM Sans, sans-serif;
+  }
   
   h1 {
     color: white;
-    font-family: DM , sans-serif;
+    font-family: DM , serif;
     font-style: normal;
     font-weight: 500;
     font-size: 80px;
@@ -214,6 +327,14 @@ body {
     .container {
       width: 1100px;
     }
+
+    .component .about-nav-mobile {
+      display: none;
+    }
+
+    .component .text-container-mobile {
+      display: none;
+    }
   }
   
   @media (max-width: 600px) {
@@ -233,4 +354,124 @@ body {
     .socialButtonsMobile {
       display: flex;
     }
+
+    .component {
+      display: flex;
+    }
+
+    .component .about-nav {
+      display: none;
+    }
+    .component .text-container {
+      display: none;
+    }
+
+  .left,
+  .right {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    gap: 12px;
+  }
+
+    .component .about-nav-mobile .socialButtonsMobile .left {
+      position: absolute;
+      left: -10px;
+      top: 20.5%;
+    }
+
+    .component .about-nav-mobile .socialButtonsMobile .right {
+      position: absolute;
+      right: -10px;
+      top: 20.5%;
+    }
+
+    .component .text-container-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .component .text-container-mobile .column .img {
+      position: relative;
+      margin-top: 90px;
+      top: -150px;
+      aspect-ratio: 1.6;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .component .text-container-mobile .column-2 {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      line-height: normal;
+      margin-left: -35px;
+      width: 50%;
+      align-content: center;
+    }
+
+    .component .text-container-mobile .column-2 .div-2 {
+      position: relative;
+      top: -100px;
+      /* align-items: center; */
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      /* margin: auto 0; */
+    }
+
+    .component .text-container-mobile .column-2 .div-3 {
+      position: relative;
+      color: #fff;
+      align-self: stretch;
+      margin-top: -25px;
+      margin-bottom: -25px;
+      margin-right: -150px;
+      left: 50px;
+      letter-spacing: 2px;
+      font: 700 34px DM, serif;
+    }
+
+    .component .text-container-mobile .column-2 .div-4 {
+      position: relative;
+      color: #fff;
+      align-self: stretch;
+      margin-top: 50px;
+      margin-right: -130px;
+      left: 50px;
+      font: 400 18px DM, sans-serif;
+      line-height: 19px;
+    }
+
+    .component .text-container-mobile .column-2 .div-5 {
+      position: relative;
+      align-content: center;
+      left: 65%;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+      justify-content: center;
+      border-radius: 40px;
+      border: 1px solid #fff;
+      margin-top: 30px;
+      padding: 8px;
+      font: 500 14px/120% DM Sans, sans-serif;
+    }
+
+    .component .text-container .column-2 .div-5 {
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.7px;
+      white-space: nowrap;
+      justify-content: center;
+      border-radius: 40px;
+      border: 1px solid #fff;
+      margin-top: 30px;
+      padding: 8px;
+      font: 500 14px/120% DM Sans, sans-serif;
+    }
+
   }
